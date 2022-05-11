@@ -2,8 +2,8 @@
 
 ## Tools
 
-OpenShift
-S2I
+1. OpenShift
+2. S2I
 
 ## Steps
 
@@ -15,9 +15,9 @@ S2I
 
 2. Create ML container
 
-```
-oc new-build \
-  https://github.com/noahsa/production-ds-container.git \
-  --name=ml-image \
-  --image-stream=openshift/python:3.8-ubi8
-```
+    ```bash
+    oc new-build \
+    https://github.com/noahsa/production-ds-container.git \
+    --name=ml-image \
+    --image-stream=openshift/python:3.8-ubi8
+    ```
